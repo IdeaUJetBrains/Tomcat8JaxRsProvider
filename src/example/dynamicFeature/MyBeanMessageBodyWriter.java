@@ -1,9 +1,7 @@
 package example.dynamicFeature;
 
 import javax.annotation.Priority;
-import javax.ws.rs.ProcessingException;
-import javax.ws.rs.Produces;
-import javax.ws.rs.WebApplicationException;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.MultivaluedMap;
 import javax.ws.rs.ext.MessageBodyWriter;
@@ -15,6 +13,7 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
 
 @Produces("application/xml")
+@ConstrainedTo(RuntimeType.SERVER)
 public class MyBeanMessageBodyWriter implements MessageBodyWriter<MyBean> {
 
     @Override

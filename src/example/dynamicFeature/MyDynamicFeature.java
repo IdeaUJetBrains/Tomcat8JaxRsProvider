@@ -17,9 +17,10 @@ import java.lang.reflect.Method;
 public class MyDynamicFeature implements DynamicFeature {
  
     @Override
+    @Email
     public void configure(final ResourceInfo resourceInfo,
                           final FeatureContext context) {
- 
+
         final String resourcePackage = resourceInfo.getResourceClass()
                 .getPackage().getName();
         final Method resourceMethod = resourceInfo.getResourceMethod();

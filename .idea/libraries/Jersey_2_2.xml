@@ -22,6 +22,7 @@
       <root url="jar://$PROJECT_DIR$/lib/persistence-api-1.0.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/validation-api-1.1.0.Final.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/org.osgi.core-4.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jersey-bean-validation-2.19.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
