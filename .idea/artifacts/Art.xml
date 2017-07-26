@@ -1,17 +1,8 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" build-on-make="true" name="Art">
+  <artifact type="war" name="Art">
     <output-path>$PROJECT_DIR$/out/artifacts/Art</output-path>
-    <root id="root">
-      <element id="directory" name="WEB-INF">
-        <element id="directory" name="classes">
-          <element id="module-output" name="Tomcat8JaxRsProvider" />
-        </element>
-        <element id="directory" name="lib">
-          <element id="library" level="project" name="Jersey-2.2" />
-          <element id="library" level="project" name="jersey-media-json-jackson-2.22.1" />
-        </element>
-      </element>
-      <element id="javaee-facet-resources" facet="Tomcat8JaxRsProvider/web/Web" />
+    <root id="archive" name="Art.war">
+      <element id="artifact" artifact-name="Tomcat8JaxRsProvider:war exploded" />
     </root>
   </artifact>
 </component>
